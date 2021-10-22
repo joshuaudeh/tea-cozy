@@ -42,6 +42,11 @@ nav ul li {
 
 /* Mission */
 
+.main-mission {
+    /* background-color: yellow; */
+    height: 50rem
+}
+
 .mission {
     background-image: url("/images/img-mission-background.jpg");
     background-size: cover;
@@ -78,16 +83,18 @@ nav ul li {
 /* Snacks Pics */
 
 .snacks-main-container {
+    /* background-color: red; */
     width: 100%;
-    height: auto;
+    height: 42rem;
     position: relative;
-    top: 4rem;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
 .container-snack {
+    /* background-color: blue; */
     height: auto;
     width: 75rem;
     display: flex;
@@ -95,6 +102,7 @@ nav ul li {
     justify-content: center;
     align-items: center;
     margin: 0px auto;
+    padding: 15px;
     flex-wrap: wrap;
 }
 
@@ -106,13 +114,14 @@ nav ul li {
 }
 
 .snacks-pics img {
-    width: 18.75rem;
-    height: 12.5rem;
+    width: 20rem;
+    height: 13rem;
     margin: 20px 20px;
     
 }
 
- p {
+.snacks-pics,
+p {
     text-align: center;
 }
 
@@ -122,12 +131,14 @@ nav ul li {
 
 .location-container{
     background-image: url("/images/img-locations-background.jpg");
+    background-size: cover;
+    background-position: bottom center;
     height: 34rem;
     width: 90%;
     position: relative;
-    top: 4rem;
     margin: 0px auto;
     margin-bottom: 25px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -143,7 +154,6 @@ nav ul li {
 }
 
 .locations {
-    background-color: black;
     height: 18rem;
     width: 40%;
     display: flex;
@@ -151,9 +161,13 @@ nav ul li {
     justify-content: center;
     align-items: center;
     line-height: 4rem;
-    margin: 0px 80px;
 }
 
+.locations h3,span {
+    background-color: black;
+    width: 80%;
+    text-align: center
+}
 
 .my-own h2{
     font-size: 2rem;
@@ -174,4 +188,122 @@ nav ul li {
 .footer-copyright {
     display: flex;
     margin-left:20px;
+}
+
+@media only screen and (max-width: 1350px) {
+    .mission {
+        background-image: url("/images/img-mission-background.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 43rem;
+        width: 100%;
+        position: relative;
+        top: 65px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+    }
+
+    .mission-text  {
+        padding: 3rem;
+    }
+
+    .snacks-main-container {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+
+    .container-snack {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+        flex-wrap: wrap;
+        text-align: center;
+    } 
+
+     .snacks-pics{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 26rem;
+        height: 15rem;
+        margin: 25px;
+        flex-wrap: wrap;
+        flex-shrink: 1;
+    }
+
+    .my-own h2{
+        display: flex;
+        justify-content: center;
+        /* background-color: yellow; */
+        font-size: 3rem;
+        font-weight: bolder;
+        text-align: center;
+        width: 100%;
+    }
+
+    
+    .location-container{
+        background-image: url("/images/img-locations-background.jpg");
+        height: 60rem;
+        width: 100%;
+        position: relative;
+        top: 4rem;
+        margin: 0px auto;
+        margin-bottom: 25px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .location-main {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 20px
+    }
+
+    .locations {
+        height: 18rem;
+        width: 90%;
+    }
+
+    .locations h3,span {
+        background-color: black;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        position: relative;
+        top: 2rem;
+        height: 14rem;
+        line-height: 3rem;
+        padding: 20px;
+    }
+    
+    .footer-copyright {
+        display: flex;
+    }    
+    
+
 }
